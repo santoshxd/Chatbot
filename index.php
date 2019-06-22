@@ -1,4 +1,11 @@
 <?php
-  echo "Hello World!";
-  echo "PHP is so easy!";
+  if(isset($_REQUEST['hub_challenge'])) {
+    $c = $_REQUEST['hub_challenge'];
+    $v = $_REQUEST['hub_verify_token'];
+}
+if($v == "token111")
+{
+echo $c;
+}
+
 ?>
